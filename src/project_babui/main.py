@@ -1,8 +1,8 @@
 import argparse
 import asyncio
-import datetime
 import random
 import sys
+from datetime import datetime
 
 from humanization import Humanization
 from loguru import logger
