@@ -36,7 +36,7 @@ def start():
         "--no-first-run",
         "--no-default-browser-check",
         "--start-maximized",
-        "https://www.roommatch.nl/en/offerings/to-rent#?gesorteerd-op=publicatiedatum-&toekenning=3&toekenning=2&toekenning=1&woningsoort=1&locatie=Haarlem&locatie=Regio%2BAmsterdam",
+        "https://www.roommatch.nl/en/offerings/to-rent#?gesorteerd-op=zoekprofiel&toekenning=3&woningsoort=1",
     ]
 
     # Launch as a background process
