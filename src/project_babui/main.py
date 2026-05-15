@@ -3,6 +3,7 @@ import asyncio
 import random
 import sys
 from datetime import datetime
+from zoneinfo import ZoneInfo
 
 from humanization import Humanization
 from loguru import logger
@@ -56,7 +57,7 @@ async def main(args):
 
         while True:
             # Humans sleep at 21:00 - shut down the bot as well
-            if 7 > datetime.now().hour >= 21:
+            if datetime.now(tz=ZoneInfo("Europe/Amsterdam")).hour >= 21:
                 print("[🌙] It's getting late... Shutting down for the night.")
                 if not args.debug:
                     await telegram_bot.send_message(
