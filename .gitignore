@@ -1,0 +1,6 @@
+.venv
+.babui_browser
+__pycache__
+.babui_browser
+*.log
+.env

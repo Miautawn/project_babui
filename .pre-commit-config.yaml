@@ -10,7 +10,7 @@ repos:
     hooks:
       - id: uv-check
         name: validate uv.lock
-        entry: sh -c "cd ml && uv lock --check"
+        entry: sh -c "uv lock --check"
         language: system
         pass_filenames: false
   - repo: https://github.com/astral-sh/ruff-pre-commit
