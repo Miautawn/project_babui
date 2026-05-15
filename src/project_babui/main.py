@@ -78,7 +78,6 @@ async def main(args):
             )
 
             if candidate_id is None:
-                print("[🔍] No new candidates found. Retrying in a bit...")
                 await wait_and_do_something(current_tab, viewport, mouse_state)
                 await current_tab.reload()
                 continue
